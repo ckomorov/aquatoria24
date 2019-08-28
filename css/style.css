@@ -76,6 +76,7 @@ a {
   outline: none;
   font-family: 'Lora', serif;
   transition: .5s linear;
+  color: #000;
 }
 
 .submenu {
@@ -110,4 +111,36 @@ li:hover .submenu {
     transform: scaleY(1);
 }
 
+#blob {
+	width: 20vh;
+	height: 20vh;
+}
+
+.stripe {
+	width: 10vw;
+}
+
+.header-content {
+	margin-top: 15vh;
+}
+
+#header_title {
+	text-align: center;
+	font-size: 14vh;
+	margin-top: 1vh;
+	letter-spacing: 1.5vw;
+	color: #000;
+}
+
+#header_subtitle {
+	text-align: center;
+	margin-top: 1vh;
+	color: #000;
+	font-size: 3vh;
+	letter-spacing: .8vw;
+}
+
+#header_button {
+	text-align: center;
+}
 
