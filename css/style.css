@@ -44,9 +44,9 @@ li {
 * Header 
 */
 header {
-	width: 100vw;
+	width: 100%;
 	height: 100vh;
-	background-image: url(../img/bg-header.jpg);
+	background-image: url(../img/bg.png);
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -59,6 +59,10 @@ ul {
   padding: 0;
 }
 
+.topmenu {
+	padding-top: 3vh;
+}
+
 .topmenu > li {
   display: inline-block;
   margin-right: 20px;
@@ -69,6 +73,21 @@ ul {
   margin-right: 0;
 }
 
+.nav_panel {
+	position: fixed;
+	top: 0;
+	background-color:#fff;
+	width: 100%;
+	
+	color: #000;
+	opacity: .3;
+	transition: all 1s;
+}
+.nav_panel:hover {
+	opacity: .8;
+}
+
+
 a {
   display: block;
   padding: 10px 15px;
@@ -77,6 +96,10 @@ a {
   font-family: 'Lora', serif;
   transition: .5s linear;
   color: #000;
+}
+
+a:hover {
+	color: #afdafc;
 }
 
 .submenu {
@@ -89,6 +112,7 @@ a {
   -moz-transition: 0.5s ease-in-out;
   -o-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
+
 }
 .submenu {
   -webkit-transform: scaleY(0);
@@ -97,12 +121,21 @@ a {
   -webkit-transform-origin: 0 0;
     -ms-transform-origin: 0 0;
     transform-origin: 0 0;
-  background: #FFAB51;
+  background: #161a1e;
   opacity: 0.5;
 }
 
 .sub_li {
 	width: 300px;
+	color: #000;
+}
+
+.sub_li a {
+	color: #fff;
+}
+
+.sub_li a:hover {
+	color: #aaa;
 }
 
 li:hover .submenu {
@@ -121,7 +154,8 @@ li:hover .submenu {
 }
 
 .header-content {
-	margin-top: 15vh;
+	margin-top: 0vh;
+	padding-top: 20vh;
 }
 
 #header_title {
@@ -130,6 +164,7 @@ li:hover .submenu {
 	margin-top: 1vh;
 	letter-spacing: 1.5vw;
 	color: #000;
+	margin-bottom: 7vh;
 }
 
 #header_subtitle {
@@ -142,5 +177,68 @@ li:hover .submenu {
 
 #header_button {
 	text-align: center;
+	border: 4px double black; 
+	margin:7% 44% 0 44%;
+}
+
+
+#shop_button {
+	border: 4px double black; 
+	width:30vh;
+	position: absolute;
+	
+	width:30vh;
+}
+
+.fixedNav {
+	position: fixed;
+	top: 0;
+	opacity: 0.5;
+	left: 0;
+	background-color: #fff;
+	color: #323232;
+	width: 100%;
+	height: 10vh;
+	z-index: 10;
+}
+
+.fixedNav:hover {
+	opacity: 1;
+	z-index: 10000;
+}
+
+/****
+* SLIDER
+*/
+.slide {
+	height: 100%;
+}
+
+#slider {
+	height: 70vh;
+}
+
+.slide-text {
+	height: 100%;
+	flex: 1;
+}
+
+.slide-image img{
+	height: 100%;
+	
+	margin-top: 10vh;
+}
+
+.slide-info, .slide-title {
+	text-align: center;
+	font-family: Courier;
+}
+
+.slide-info {
+	font-size: 24pt;
+}
+
+.slide-title {
+	font-size: 32pt;
 }
 
